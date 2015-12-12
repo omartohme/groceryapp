@@ -1,0 +1,16 @@
+.task,
+p {
+    font-family: Gill Sans, Verdana;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    list-style: none;
+}
+
+img,
+img.scale-with-grid {
+    outline: 0;
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Go Shopping Foooool!</title>
+
+    <link rel="stylesheet" href="themes/omar.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/script.js"></script>
+
+</head>
+
+<body>
+    <section data-role="page" id="home" data-theme="b">
+        <div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+            <h1 class="ui-title" role="heading" aria-level="1">Shopping list!</h1>
+        </div>
+        <article data-role="content" data-theme="b">
+            <img src="img/veg.png" class="img-header" />
+            <p>Grocery List</p>
+            <div id="yay">
+                <section id="taskIOSection">
+                    <div id="formContainer">
+                        <form id="taskEntryForm">
+                            <input id="taskInput" placeholder="What would you like today?" />
+                        </form>
+                    </div>
+                    <ul id="taskList"></ul>
+                </section>
+            </div>
+        </article>
+        <div data-role="footer" data-position="fixed" data-tap-toggle="false" data-theme="b">
+            <div data-role="navbar">
+                <ul>
+                    <li>
+                        <a href="#" id="erase" class="ui-btn" data-icon="delete" data-iconpos="top">Clear All</a>
+                    </li>
+                    <li>
+                        <a href="#" id="submit" class="ui-btn" data-icon="plus" data-iconpos="top" onclick=addItem()>Add Item</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
